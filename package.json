@@ -1,5 +1,5 @@
 {
-  "name": "ea-sdk",
+  "name": "@everafter/ea-sdk",
   "version": "0.0.2",
   "description": "EverAfter SDK",
   "main": "index.js",
