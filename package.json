@@ -1,0 +1,34 @@
+{
+  "name": "ea-sdk",
+  "version": "0.0.1",
+  "description": "EverAfter SDK",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everafterai/ea-sdk.git"
+  },
+  "keywords": [
+    "everafter",
+    "sdk",
+    "csm"
+  ],
+  "author": "Tal Shemesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everafterai/ea-sdk/issues"
+  },
+  "homepage": "https://github.com/everafterai/ea-sdk#readme",
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
