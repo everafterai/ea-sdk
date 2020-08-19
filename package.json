@@ -4,7 +4,7 @@
   "description": "EverAfter SDK",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -d",
     "build:watch": "tsc -w",
     "test": "echo \"Error: no test specified\" "
   },
