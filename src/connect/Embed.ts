@@ -6,7 +6,8 @@ export class Embed {
 		accountId: string,
 		personaName: string,
 		email: string,
-		name: string
+		name: string,
+		embedLocation?: string,
 	) => {
 		return axios
 			.post(
@@ -16,6 +17,7 @@ export class Embed {
 					email,
 					accountId,
 					personaName,
+					embedLocation
 				},
 				{
 					headers: {
