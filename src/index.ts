@@ -86,14 +86,15 @@ export class EverAfter {
 		options?: {
 			accountId?: string,
 			personaName?: string,
-			embedLocation?: string
+			embedLocation?: string,
+			baseUrl?: string
 		}
 	) => {
 		try {
 			const accountId = options?.accountId || '';
 			const personaName = options?.personaName || '';
 			const embedLocation = options?.embedLocation || '';
-			const url = await embed.getUrl(this.workspace, accountId, personaName, email, name, embedLocation);
+			const url = await embed.getUrl(this.workspace, accountId, personaName, email, name, embedLocation, options?.baseUrl);
 
 			const sourceElement = document.getElementById(elementId);
 			if (!sourceElement) {
