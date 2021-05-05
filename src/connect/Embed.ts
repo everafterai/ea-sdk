@@ -28,7 +28,7 @@ export class Embed {
 					},
 				}
 			)
-			.then((urlResponse: any) => {
+			.then((urlResponse: { data: string }) => {
 				return urlResponse.data;
 			});
 	};
