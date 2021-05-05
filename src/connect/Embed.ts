@@ -8,10 +8,13 @@ export class Embed {
 		email: string,
 		name: string,
 		embedLocation?: string,
+		baseUrl?: string,
 	) => {
+		const apiUrl = baseUrl || 'https://production-server.everafter.ai';
+
 		return axios
 			.post(
-				`https://production-server.everafter.ai/embed/${workspaceId}`,
+				`${apiUrl}/embed/${workspaceId}`,
 				{
 					name,
 					email,
@@ -25,7 +28,7 @@ export class Embed {
 					},
 				}
 			)
-			.then((urlResponse) => {
+			.then((urlResponse: { data: string }) => {
 				return urlResponse.data;
 			});
 	};
