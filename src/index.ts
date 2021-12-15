@@ -84,6 +84,7 @@ export class EverAfter {
    * @param {string} [options.accountId] - The account ID of which the user belongs to. If not provided, will try to mach account according to "Manage Users" table in account's persona screen
    * @param {string} [options.personaName] - The persona (role) name  of the user.If not provided, will try to mach persona according to "Manage Users" table in account's persona screen
    * @param {string} [options.embedLocation] - Embed location
+   * @param {string} [options.embedLocationUrl] - Embed location url is a full URL that user browsed to.
    *
    * @returns {Promise<boolean>} - True if succeeded
    */
