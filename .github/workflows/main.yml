@@ -41,7 +41,14 @@ jobs:
       with:
         bump_version_scheme: minor
         tag_prefix: v
+    - name: prepare to Publish To NPM
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+        registry-url: 'https://registry.npmjs.org'
     - name: Publish To NPM
-      run: npm publish --access public
+      run: |
+        npm ci  
+        npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
