@@ -35,11 +35,12 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
     - name: Create Github Release Tag
-      uses: rymndhng/release-on-push-action@v0.15.0
+      uses: rymndhng/release-on-push-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         bump_version_scheme: minor
+        tag_prefix: v
     - name: Publish To NPM
       run: npm publish --access public
       env:
